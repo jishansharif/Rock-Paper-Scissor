@@ -18,6 +18,8 @@ computer = t[randint(0,2)]
 user = False
 
 while user == False:
+    if user == "x":
+        break
 #set player to True
     user = input("Rock, Paper, Scissors?")
     if user == computer:
@@ -32,7 +34,7 @@ while user == False:
             print("You lose!", computer, "cut", user)
         else:
             print("You win!", user, "covers", computer)
-    elif userr == "Scissors":
+    elif user == "Scissors":
         if computer == "Rock":
             print("You lose...", computer, "smashes", user)
         else:
